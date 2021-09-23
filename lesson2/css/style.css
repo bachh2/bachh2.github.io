@@ -1,0 +1,89 @@
+* {
+  background-color: antiquewhite;
+  margin: 25px 50px 15px;
+  text-align: justify;
+}
+
+img {
+  height: 400px;
+  width: 500px;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(19, 70, 70);
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: overline;
+  text-shadow: 3px 3px;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+}
+table {
+  margin-left: 100px;
+}
+
+table,
+th,
+td {
+  font-size: 20px;
+  text-align: center;
+  color: #0a0007;
+  border: 1px solid black;
+  border-style: double;
+  background-color: #7ca862;
+  opacity: 0.5;
+}
+.flavor {
+  color: rgb(107, 85, 51);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.detail {
+  color: rgb(119, 206, 206);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Previous {
+  background-color: aliceblue;
+  text-decoration: none;
+  text-align: left;
+  color: #c6d631;
+  size: 18px;
+  width: 150px;
+  border: 5px solid rgb(88, 133, 88);
+  padding: 20px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.Next {
+  text-decoration: none;
+  background-color: aliceblue;
+  text-align: right;
+  color: #317cb9;
+  size: 18px;
+  width: 150px;
+  border: 5px solid rgb(88, 133, 88);
+  padding: 20px 33px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.exchangerate {
+  list-style: square;
+}
