@@ -5,12 +5,6 @@
   background-size: cover;
   box-sizing: border-box;
   word-spacing: -1px;
-  background-clip: content-box;
-}
-
-.navbar {
-  width: 900px;
-  margin: auto;
 }
 
 .mainpage {
@@ -26,8 +20,13 @@
   border: none;
   font-size: 18px;
   background: none;
+  width: 800px;
+  padding-bottom: 20px;
 }
-
+.body {
+  margin-left: auto;
+  margin-right: auto;
+}
 .shop {
   width: 600px;
   display: inline-block;
