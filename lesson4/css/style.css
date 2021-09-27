@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  background-image: url(../img/dragon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 900px;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
+}
+
+.nav a {
+  padding-left: 20px;
+  padding-top: 20px;
+  float: left;
+}
+
+.nav input {
+  float: right;
+  padding: 20px;
+  border: none;
+}
+
+.mainimage {
+  display: inline-block;
+  width: 200px !important;
+  height: auto;
+}
+.search {
+  display: inline-block;
+  width: 400px;
+}
+.main {
+  display: inline-block;
+}
+.section {
+  display: inline-block;
+}
+.aside {
+  display: inline-block;
+}
+h2.Feature {
+  width: 600px;
+  font-style: oblique;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(155, 48, 48);
+  text-decoration: underline;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.maincatalog {
+  width: 600px;
+  float: left;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+.item {
+  box-sizing: border-box;
+  display: inline-block;
+  word-spacing: -1px;
+  width: calc((600px - 90px) / 3);
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  content: "";
+  clear: both;
+}
+
+.item img {
+  width: 170px;
+  height: 240px;
+}
+.description {
+  width: calc((600px - 90px) / 3);
+  height: 40px;
+  color: antiquewhite;
+  font-size: 14px;
+  text-align: center;
+}
+
+.aside {
+  width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+}
+
+.newrelease {
+  display: inline-block;
+  font-size: 20px;
+  color: lightcoral;
+  text-decoration: underline;
+  width: 300px;
+}
+
+.newbook {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+}
+
+.contact {
+  margin-top: auto;
+  font-size: 16;
+  color: lightseagreen;
+  float: left;
+}

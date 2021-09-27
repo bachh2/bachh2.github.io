@@ -1,0 +1,87 @@
+* {
+  background-image: url("../img/dragon.jpg");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  word-spacing: -1px;
+  background-clip: content-box;
+}
+
+.navbar {
+  width: 900px;
+  margin: auto;
+}
+
+.mainpage {
+  width: 100px;
+  height: auto;
+  float: left;
+}
+
+.searchbar {
+  float: right;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  font-size: 18px;
+  background: none;
+}
+
+.shop {
+  width: 600px;
+  display: inline-block;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 300px;
+}
+
+.aisle {
+  color: coral;
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: block;
+}
+
+.item {
+  display: inline-block;
+  width: 190px;
+  padding: 4px;
+  border: 1px;
+}
+
+.book > img {
+  width: 190px;
+  height: 290px;
+}
+
+.cover {
+  width: 190px;
+  height: 30px;
+  font-size: 14px;
+  color: azure;
+}
+
+.bestseller {
+  width: 300px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+
+.bestcover > img {
+  width: 300px;
+  height: 450px;
+}
+
+.bottom {
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: brown;
+  text-align: center;
+}
