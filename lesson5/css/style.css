@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex.justify-start {
+  justify-content: flex-start;
+}
+
+.flex.justify-center {
+  justify-content: center;
+}
+
+.flex.jusityf-end {
+  justify-content: flex-end;
+}
+
+.flex.justify-between {
+  justify-content: space-between;
+}
+
+.flex.justify-around {
+  justify-content: space-around;
+}
+
+.flex.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.flex.align-content-between {
+  align-content: space-between;
+}
+
+.flex.align-start {
+  align-items: flex-start;
+}
+
+.flex.align-end {
+  align-items: flex-end;
+}
+
+.flex.align-center {
+  align-items: center;
+}
+
+.flex.align-stretch {
+  align-items: stretch;
+}
+
+.flex.align-baseline {
+  align-items: baseline;
+}
+/* Header */
+header {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 100px;
+  margin-right: auto;
+}
+
+.top {
+  margin-right: 20px;
+  padding: 10 10 10 10;
+}
+
+.toppage {
+  border-radius: 1px;
+  border: 1px;
+  border: black;
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.toppage a {
+  text-decoration: none;
+  color: brown;
+  padding: 5px 5px 5px 5px;
+}
+
+/* Navbar */
+
+.navbar {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-left: black;
+  border-left-width: 0.5px;
+  border-right: black;
+  border-right-width: 0.5px;
+}
+
+/* main */
+
+.topstory {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  float: left;
+  max-width: 350px;
+}
+
+.right {
+  float: left;
+  max-width: 650px;
+}
+
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sideimage {
+  max-width: 40%;
+  height: auto;
+}
+
+main .img {
+  max-width: 40%;
+}
+
+h5 {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.smallbar {
+  padding: 5px 5px 5px 5px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 650px;
+}
+
+/* footer */
+footer {
+  margin-top: 300px;
+}
+.smalllogo {
+  max-width: 100px;
+}
