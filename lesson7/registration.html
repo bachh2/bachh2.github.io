@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/stylereg.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="row flex flex-wrap justify-center">
+          <h3>Registration for Extracurriculum class</h3>
+        </div>
+        <div class="row flex flex-wrap justify-center">
+          <div class="col-6">
+            <div class="row">
+              <label for="name"> Name </label>
+            </div>
+            <div class="row">
+              <input type="text" id="name" placeholder="Name" required/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <label for="class"> Class</label>
+            </div>
+            <div class="row">
+              <input type="text" name="" id="class" placeholder="Class" required/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <label for="date">Date</label>
+            </div>
+            <div class="row">
+              <input type="date" name="" id="date" required/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="row">Teacher's Group</div>
+            </div>
+            <div class="row">
+              <input
+                class="teach"
+                type="radio"
+                name="teachgroup1"
+                value="Jean"
+                id="group"
+              />
+              <label for="group">Jean Grey</label>
+              <input
+                class="teach"
+                type="radio"
+                name="teachgroup2"
+                value="Storm"
+                id="group"
+              />
+              <label for="group">Storm</label>
+              <input
+                class="teach"
+                type="radio"
+                name="teachgroup3"
+                value="Scott"
+                id="group"
+              />
+              <label for="group">Scott Summers</label>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-center">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

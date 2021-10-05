@@ -1,0 +1,38 @@
+* {
+  padding: 10px;
+}
+
+h3 {
+  padding: 20px;
+  color: crimson;
+  font-size: 29px;
+}
+
+.row {
+  padding: 10px 0px 10px 0px;
+}
+
+input {
+  padding: 10px 10px 10px 10px;
+  width: 80%;
+}
+
+input.teach {
+  width: 10%;
+}
+
+button {
+  padding: 0;
+  height: 40px;
+  width: 60px;
+}
+
+input:focus {
+  border-color: darkred;
+  box-shadow: 0px 0px 0px 4px darkred;
+}
+
+input:invalid {
+  border-color: darkslategray;
+  box-shadow: 0px 0px 0px 3px blue;
+}
