@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-between {
+  align-content: space-between;
+}
+
+.conten-around {
+  align-content: space-around;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.col-1 {
+  flex-basis: 8.333333%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-2 {
+  flex-basis: 16.666667%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-3 {
+  flex-basis: 25%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-4 {
+  flex-basis: 33.333333%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-5 {
+  flex-basis: 41.666667%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-7 {
+  flex-basis: 58.333333%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-8 {
+  flex-basis: 66.666667%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-9 {
+  flex-basis: 75%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-10 {
+  flex-basis: 83.333333%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-11 {
+  flex-basis: 91.666667%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col-12 {
+  flex-basis: 100%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.col20 {
+  flex-basis: 20%;
+  padding-left: 6px;
+  padding-right: 6px;
+}

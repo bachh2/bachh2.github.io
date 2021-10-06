@@ -1,0 +1,14 @@
+.navbar {
+  position: sticky;
+  top: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+body {
+  height: 3000px;
+}
