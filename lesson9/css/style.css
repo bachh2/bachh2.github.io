@@ -1,0 +1,145 @@
+header {
+  background: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+.navbar .col-5 a {
+  text-decoration: none;
+  color: red;
+  border-style: solid;
+  border-color: grey;
+  border-width: thin;
+  padding: 4px 6px 4px 6px;
+}
+.navbar input {
+  width: 100%;
+  height: 20px;
+}
+
+.searchbutton img {
+  height: 15px;
+  position: absolute;
+  top: 35%;
+  right: 18%;
+}
+
+.navmenu {
+  display: inline-block;
+}
+
+/*main*/
+
+main {
+  margin-top: 50px;
+}
+
+.anime {
+  position: relative;
+}
+
+.mainbanner {
+  padding-top: 10px;
+}
+
+.sidebanner {
+  padding: 10px 0px 0px 0px;
+}
+
+.subbanner {
+  padding: 10px 6px 0px 6px;
+}
+
+.new .row .col-3 {
+  padding: 5px;
+}
+
+.playbtn {
+  width: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border: none;
+}
+
+.description {
+  padding: 5px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+
+.animeta {
+  width: 100%;
+  overflow: hidden;
+}
+
+.submenu-item {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+.submenu {
+  display: none;
+  width: 1000px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.menubutton:hover .submenu {
+  display: block;
+}
+
+.name {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 7px;
+  width: 100%;
+  background-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+
+.colspec {
+  flex-basis: 12.5%;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: none;
+}
+
+.thumbnail-small img {
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.shortanime {
+  padding-top: 10px;
+}
