@@ -9,6 +9,7 @@ public class App {
         float height = sc.nextFloat();
 
         float bmi = weight / (height * height);
-        System.out.println("BMI là: "+ bmi);
+        // System.out.println("BMI là: "+ bmi);
+        System.out.println("BMI là: " + weight / (height * height));
     }
 }
