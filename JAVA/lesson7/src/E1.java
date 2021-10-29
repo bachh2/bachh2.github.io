@@ -6,7 +6,7 @@ public class E1 {
         System.out.println("Chọn in hình vuông bằng số 1, in hình tam giác bằng số 2");
         int a = sc.nextInt();
         sc.nextLine();
-        if (a >2)
+        if (a >3)
         {
             System.out.println("Không hợp lệ");
         }
@@ -24,6 +24,11 @@ public class E1 {
                 System.out.println("\n");
             }
             break;
+        case 3:
+            System.out.println("\t\t\t*");
+            System.out.println("\t\t*\t\t*");
+            System.out.println("\t*\t\t*\t\t*");
+            System.out.println("*\t\t*\t\t*\t\t*");
         }
         sc.close();
     }
