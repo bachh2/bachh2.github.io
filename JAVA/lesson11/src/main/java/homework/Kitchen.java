@@ -1,3 +1,5 @@
+package homework;
+
 public class Kitchen extends Employee {
 
     double serviceCharge;
@@ -22,6 +24,6 @@ public class Kitchen extends Employee {
 
     public void display() {
         System.out.println(
-                "Mã số: " + getId + ", Tên: " + getName + ", Tuổi: " + getAge + ", Lương: " + calculatorSalary());
+                "Mã số: " + id + ", Tên: " + name + ", Tuổi: " + age + ", Lương: " + calculatorSalary(basicSalary));
     }
 }

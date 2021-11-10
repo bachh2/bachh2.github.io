@@ -1,3 +1,5 @@
+package homework;
+
 public abstract class Employee {
     int id;
     String name;
