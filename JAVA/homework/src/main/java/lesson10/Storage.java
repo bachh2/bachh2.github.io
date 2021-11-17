@@ -66,7 +66,7 @@ public class Storage implements Comparable<Storage> {
                 + "Trong kho: " + stock + ", Đã bán " + sold + ", Danh mục: " + category);
     }
     
-    @Override
+    
     public int compareTo(Storage o)
     {
         int compare = this.getsold() - o.getsold();
