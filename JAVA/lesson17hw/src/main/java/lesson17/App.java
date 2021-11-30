@@ -17,10 +17,12 @@ public final class App {
         {   
             ArrayList<Transaction> hisTransaction = new ArrayList<Transaction>();
             hisTransaction.add(new Transaction("28/10/2021", "Lương tháng 10", 2164984, 16000000));
-            hisTransaction.add(new Transaction("29/11/2021", "Lương tháng 11", 2164984, 16000000 ));
+            hisTransaction.add(new Transaction("29/11/2021", "Lương tháng 11", 2164984, 16000000));
+            long money = 5000000;
             System.out.println("Bạn muốn chuyển tiền hay tra cứu thông tin?");
             System.out.println("1 - Chuyển tiền.");
             System.out.println("2 - Tra cứu.");
+            System.out.println("3 - Tra cứu số dư.");
             int work = sc.nextInt();
             sc.nextLine();
             switch (work) {
@@ -30,6 +32,8 @@ public final class App {
 
                 case 2:
                     hisTransaction.forEach(a -> System.out.println(a));
+                case 3:
+                    System.out.println("Số dư là: "+money+"vnd");
             }
 
         }
