@@ -32,8 +32,10 @@ public final class App {
 
                 case 2:
                     hisTransaction.forEach(a -> System.out.println(a));
+                    break;
                 case 3:
-                    System.out.println("Số dư là: "+money+"vnd");
+                    System.out.println("Số dư là: " + money + "vnd");
+                    break;
             }
 
         }
