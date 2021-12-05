@@ -1,8 +1,6 @@
 package midterm;
 import java.util.Scanner;
 import java.util.ArrayList;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
 public final class App {
   public static void main(String[] args) {    
