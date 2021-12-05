@@ -8,26 +8,27 @@ public class Login {
         Scanner sc = new Scanner(System.in);
         // boolean checkaccount = false;
         // while (!checkaccount) {
+            System.out.println("Nhập thông tin đăng nhập: ");
             System.out.println("Nhập username: ");
             String loguser = sc.nextLine();
             System.out.println("Nhập mật khẩu: ");
             String logpass = sc.nextLine();
 
-            ArrayList<account> list;
-            accountlist data = new accountlist();
-            list = data.getAccount();
+            accountlist acclist = new accountlist();
+            ArrayList<account> list = acclist.getData();
 
             account usersearch = list.stream().filter(e -> e.getUsername().equals(loguser)).findFirst()
                     .orElse(null);
-            if (usersearch.equals(null)) {
+            if (usersearch==null) {
                 System.out.println("Kiểm tra lại username.");
                 Login.logon();
             }
 
-            else if (!usersearch.equals(null)) {
+            else if (usersearch!=null) {
                 if (logpass.equals(usersearch.getPassword())) {
-                    // checkaccount = true;   
-                    LoginSuc.Acclogon();           
+                    // checkaccount = true; 
+                      
+                    LoginSuc.Acclogon(loguser);           
                 } else if (!logpass.equals(usersearch.getPassword())) {
                     System.out.println("Kiểm tra lại mật khẩu.");
                     System.out.println("Vui lòng chọn\n 1 - Đăng nhập lại\n 2 - Quên mật khẩu ");
@@ -43,11 +44,8 @@ public class Login {
                     }
                 }
             }
-        // }
-        
-        
+        // }   
         sc.close();
-
     }
 
     public static void reset() {
@@ -55,17 +53,14 @@ public class Login {
         System.out.println("Nhập email của bạn: ");
         String resetmail = sc.nextLine();
 
-        ArrayList<account> list;
-        accountlist data = new accountlist();
-        list = data.getAccount();
+        accountlist acclist = new accountlist();
+        ArrayList<account> list = acclist.getData();
 
         account mailsearch = list.stream().filter(e -> e.getEmail().equals(resetmail)).findFirst()
                 .orElse(null);
-        if (mailsearch.equals(null)) {
-            System.out.println("Tài khoản chưa tồn tại");
-            Signup.signUp();
-        }
-        else if (!mailsearch.equals(null)) {
+        if (mailsearch ==null) {
+            System.out.println("Tài khoản chưa tồn tại");            
+        } else if (mailsearch!=null) {
             System.out.println("Mật khẩu mới là:");
             String newpass = sc.nextLine();
             mailsearch.setPassword(newpass);

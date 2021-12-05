@@ -1,20 +1,29 @@
 package midterm;
 
 import java.util.ArrayList;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.lang.reflect.Type;
 
 public class accountlist {
-    ArrayList<account> list;
+    public ArrayList<account> getData() {
+        ArrayList<account> list = new ArrayList<>();
+        try {
+            Gson gson = new Gson();
 
-    list=new ArrayList<>();
+            FileReader reader = new FileReader("JAVA/midtermtest/src/main/java/midterm/account.json");
 
-    public ArrayList<account> addAccount() {
-        list.add(new account("doofus", "One-should", "doofus.gmail@com"));
-        list.add(new account("doofus2", "One-shouldnot", "doofus2.gmail@com"));
-        list.add(new account("doofus3", "One-shall", "doofus3.gmail@com"));
+            Type objectType = new TypeToken<ArrayList<account>>() {
+            }.getType();
+
+            list = gson.fromJson(reader, objectType);
+
+        } catch (FileNotFoundException e) {
+            System.out.println("Không tìm thấy file");
+        }
         return list;
     }
-
-    public ArrayList<account> getAccount() {
-        return list;
-    }
+   
 }
