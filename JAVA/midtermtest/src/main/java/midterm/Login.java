@@ -14,9 +14,6 @@ public class Login {
             System.out.println("Nhập mật khẩu: ");
             String logpass = sc.nextLine();
 
-            accountlist acclist = new accountlist();
-            ArrayList<account> list = acclist.getData();
-
             account usersearch = list.stream().filter(e -> e.getUsername().equals(loguser)).findFirst()
                     .orElse(null);
             if (usersearch==null) {
@@ -52,9 +49,6 @@ public class Login {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập email của bạn: ");
         String resetmail = sc.nextLine();
-
-        accountlist acclist = new accountlist();
-        ArrayList<account> list = acclist.getData();
 
         account mailsearch = list.stream().filter(e -> e.getEmail().equals(resetmail)).findFirst()
                 .orElse(null);

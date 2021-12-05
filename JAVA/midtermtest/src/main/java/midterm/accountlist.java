@@ -12,14 +12,10 @@ public class accountlist {
         ArrayList<account> list = new ArrayList<>();
         try {
             Gson gson = new Gson();
-
             FileReader reader = new FileReader("JAVA/midtermtest/src/main/java/midterm/account.json");
-
             Type objectType = new TypeToken<ArrayList<account>>() {
             }.getType();
-
             list = gson.fromJson(reader, objectType);
-
         } catch (FileNotFoundException e) {
             System.out.println("Không tìm thấy file");
         }

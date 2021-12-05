@@ -9,10 +9,7 @@ public class LoginSuc {
     public static void Acclogon(String loguser) {
         System.out.println("Chào mừng " + loguser + ", bạn muốn làm gì?");
         Scanner sc = new Scanner(System.in);
-       
-        accountlist acclist = new accountlist();
-        ArrayList<account> list = acclist.getData();
-        
+           
         // boolean isCheck = false;
         // while (!isCheck) {
         System.out.println(
