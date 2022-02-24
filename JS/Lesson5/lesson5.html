@@ -23,19 +23,19 @@
     <p id="turn">Lượt của:</p>
     <table>
       <tr>
-        <td id="8"></td>
+        <td id="0"></td>
         <td id="1"></td>
-        <td id="6"></td>
+        <td id="2"></td>
       </tr>
       <tr>
         <td id="3"</td>
+        <td id="4"></td>
         <td id="5"></td>
-        <td id="7"></td>
       </tr>
       <tr>
-        <td id="4"></td>
-        <td id="9"></td>
-        <td id="2"></td>
+        <td id="6"></td>
+        <td id="7"></td>
+        <td id="8"></td>
       </tr>
     </table>
     <p id = "winner">
@@ -63,7 +63,8 @@
             state[0]==state[4] && state[4]==state[8]&& state[0]==this.textContent||
             state[2]==state[4] && state[4]==state[6]&& state[2]==this.textContent
             ){              
-              winnerNode.textContent = turnX ? "X" : "O"; 
+              winnerNode.textContent = turnX ? "X" : "O";
+              document.getElementById("winner").append(winnerNode);              
             } 
             state[parseInt(this.id)]=this.textContent;             
             console.log(state);   
