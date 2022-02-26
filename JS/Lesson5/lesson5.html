@@ -5,42 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      td {
-        width: 20px;
-        height: 30px;
-      }
-      table,
-      tr,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding-left: 10px;        
-      }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
   </head>
-  <body>
+  <body >
+    <div class="row justify-content-center">
     <p id="turn">Lượt của:</p>
-    <table>
+    <table class="table table-bordered " style="height: 300px; width: 300px;">
       <tr>
-        <td id="0"></td>
-        <td id="1"></td>
-        <td id="2"></td>
+        <td  class="rounded-0 mh-100" id="0"></td>
+        <td  class="rounded-0 mh-100" id="1"></td>
+        <td  class="rounded-0 mh-100" id="2"></td>
       </tr>
       <tr>
-        <td id="3"</td>
-        <td id="4"></td>
-        <td id="5"></td>
+        <td  class="rounded-0 mh-100" id="3"</td>
+        <td  class="rounded-0 mh-100" id="4"></td>
+        <td  class="rounded-0 mh-100" id="5"></td>
       </tr>
       <tr>
-        <td id="6"></td>
-        <td id="7"></td>
-        <td id="8"></td>
+        <td class="rounded-0 mh-100" id="6"></td>
+        <td  class="rounded-0 mh-100" id="7"></td>
+        <td  class="rounded-0 mh-100" id="8"></td>
       </tr>
     </table>
-    <p id = "winner">
+    <p id = "winner"> 
         Người thắng là: 
     </p>
+    </div>
     <script>
       let turnX = true;
       const tds = document.querySelectorAll("td");
@@ -54,6 +45,8 @@
           "click",
           function (e) {
             this.textContent = turnX ? "X" : "O";
+            state[parseInt(this.id)]=this.textContent;
+            let win = false; 
             if (state[0]==state[1] && state[1]==state[2] && state[0]==this.textContent||
             state[3]==state[4] && state[4]==state[5]&& state[3]==this.textContent||
             state[6]==state[7] && state[7]==state[8]&& state[6]==this.textContent||
@@ -64,9 +57,10 @@
             state[2]==state[4] && state[4]==state[6]&& state[2]==this.textContent
             ){              
               winnerNode.textContent = turnX ? "X" : "O";
-              document.getElementById("winner").append(winnerNode);              
-            } 
-            state[parseInt(this.id)]=this.textContent;             
+              !win;                                      
+            } else if (state.length==9 && win==false) {
+              winnerNode.textContent = "Hòa";
+            }        
             console.log(state);   
             turnX = !turnX;
             turnNode.textContent = turnX ? "X" : "O";          
