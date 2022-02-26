@@ -13,40 +13,36 @@
     <p id="turn">Lượt của:</p>
     <table class="table table-bordered " style="height: 300px; width: 300px;">
       <tr>
-        <td  class="rounded-0 mh-100" id="0"></td>
-        <td  class="rounded-0 mh-100" id="1"></td>
-        <td  class="rounded-0 mh-100" id="2"></td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="0"></td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="1"></td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="2"></td>
       </tr>
       <tr>
-        <td  class="rounded-0 mh-100" id="3"</td>
-        <td  class="rounded-0 mh-100" id="4"></td>
-        <td  class="rounded-0 mh-100" id="5"></td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="3"</td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="4"></td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="5"></td>
       </tr>
       <tr>
-        <td class="rounded-0 mh-100" id="6"></td>
-        <td  class="rounded-0 mh-100" id="7"></td>
-        <td  class="rounded-0 mh-100" id="8"></td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="6"></td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="7"></td>
+        <td width="33%" height="33%" class="rounded-0 mh-100" id="8"></td>
       </tr>
-    </table>
-    <p id = "winner"> 
-        Người thắng là: 
-    </p>
+    </table>    
     </div>
     <script>
       let turnX = true;
+      let win = false; 
       const tds = document.querySelectorAll("td");
       const turnNode = document.createTextNode("X");
       const winnerNode = document.createTextNode("");
       let state = {};            
-      document.getElementById("turn").append(turnNode);
-            
+      document.getElementById("turn").append(turnNode);            
       tds.forEach(function (td) {
         td.addEventListener(
           "click",
           function (e) {
             this.textContent = turnX ? "X" : "O";
-            state[parseInt(this.id)]=this.textContent;
-            let win = false; 
+            state[parseInt(this.id)]=this.textContent;            
             if (state[0]==state[1] && state[1]==state[2] && state[0]==this.textContent||
             state[3]==state[4] && state[4]==state[5]&& state[3]==this.textContent||
             state[6]==state[7] && state[7]==state[8]&& state[6]==this.textContent||
@@ -57,9 +53,10 @@
             state[2]==state[4] && state[4]==state[6]&& state[2]==this.textContent
             ){              
               winnerNode.textContent = turnX ? "X" : "O";
-              !win;                                      
+              win = true;
+              alert("Người thắng là: " + winnerNode.textContent);                                      
             } else if (state.length==9 && win==false) {
-              winnerNode.textContent = "Hòa";
+              alert("Hòa");
             }        
             console.log(state);   
             turnX = !turnX;
